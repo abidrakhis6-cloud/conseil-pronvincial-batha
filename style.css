@@ -1049,3 +1049,30 @@ a:hover {
   margin-top: 10px;
   font-size: 14px;
 }
+/* Lien Facebook - Actualités */
+.facebook-link {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 25px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.facebook-link p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.facebook-link a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.facebook-link a:hover {
+  text-decoration: underline;
+}
