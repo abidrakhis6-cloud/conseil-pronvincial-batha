@@ -1,0 +1,1080 @@
+body { margin:0; 
+  font-family:Arial; }
+
+  html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+
+header { background:#0a3d62; 
+  color:white; padding:20px; 
+  text-align:center; }
+nav { background:#1e3799; 
+  padding:10px; 
+  text-align:center; }
+nav a { color:white; 
+  margin:0 10px; 
+  text-decoration:none; 
+  font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+main { padding:20px; }
+footer {
+  background-color: #0b3c6d;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+ 
+ font-size: 14px;
+}
+
+/* ===== PAGE ACCUEIL : TEXTE CENTRÉ + IMAGE CARRÉE ===== */
+
+/* Centrer le texte de l'accueil */
+#content h1,
+#content p {
+  text-align: center !important;
+}
+
+/* Image principale de l'accueil */
+#content img {
+  width: 320px !important;     /* taille carrée */
+  height: 320px !important;
+  object-fit: cover !important;
+  display: block !important;
+  margin: 20px auto !important;
+  border-radius: 8px;          /* carré propre (mets 0 si tu veux carré strict) */
+}
+
+
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 280px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#chat-header {
+  background: #1e3799;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+#chat-messages {
+  height: 200px;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#chat-messages p {
+  margin: 5px 0;
+}
+
+#user-input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+.page-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 50%;
+  object-fit: cover;
+}
+ main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+a {
+  color: #0a5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== MEMBRES ===== */
+
+/* Président & Gouverneur */
+.membres-container .membre img {
+  width: 90px;        /* taille réduite */
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%; /* cercle */
+  border: 2px solid #0b3c5d;
+}
+
+/* Grille des conseillers */
+.conseillers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Carte conseiller */
+.conseillers .membre img {
+  width: 80px;       /* encore plus petit */
+  height: 80px;
+  border-radius: 50%; /* logo cercle */
+  border: 2px solid #0b3c5d;
+}
+
+/* Texte sous photo */
+.membre p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/* ===== CONSEILLERS : PHOTO + NOM ===== */
+
+.conseillers .membre {
+  text-align: center;   /* centre photo + texte */
+}
+
+.conseillers .membre img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0b3c5d;
+  display: block;
+  margin: 0 auto;
+}
+
+.conseillers .membre p {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* ===== PRESIDENT : PHOTO CARREE + TEXTE CENTRE ===== */
+
+.membres-container > .membre {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.membres-container > .membre img {
+  width: 140px;        /* taille carrée */
+  height: 140px;
+  object-fit: cover;  /* coupe l’image proprement */
+  border-radius: 8px; /* carré légèrement arrondi */
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #0b3c5d;
+}
+
+.membres-container > .membre h3,
+.membres-container > .membre p {
+  text-align: center;
+}
+
+/* ===== ACCUEIL : PHOTO À GAUCHE + 3 CARTES ===== */
+
+.accueil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colonnes */
+  gap: 20px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Photo président */
+.accueil-photo img {
+  width: 100%;
+  max-width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Cartes */
+.accueil-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.accueil-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.accueil-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 900px) {
+  .accueil-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accueil-photo img {
+    margin-bottom: 20px;
+  }
+}
+/* ===== PRÉSENTATION : TEXTE CENTRÉ AU MILIEU DE LA PAGE ===== */
+
+.presentation {
+  max-width: 900px;      /* largeur du bloc */
+  margin: 0 auto;        /* centre le bloc */
+  padding: 20px;
+}
+
+.presentation h1,
+.presentation p {
+  text-align: center;    /* centre le texte */
+}
+
+/* ===== ACCUEIL : BLOCS BIEN FORMÉS (TITRE + TEXTE) ===== */
+
+.accueil-services {
+  max-width: 1100px;     /* large, pas étroit */
+  margin: 80px auto;
+  padding: 0 30px;
+}
+
+/* Un bloc = une section */
+.service-block {
+  margin-bottom: 70px;
+  text-align: center;   /* titre centré */
+}
+
+/* Titres */
+.service-block h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0b3c5d;
+}
+
+/* Texte normal (lisible, large) */
+.service-block p {
+  max-width: 900px;
+  margin: 0 auto 15px auto;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;  /* lecture professionnelle */
+  color: #333;
+}
+
+/* Sous-texte (phrase clé) */
+.service-sub {
+  font-weight: 600;
+  color: #2e7d32;
+  text-align: center;
+}
+/* ===== CARTES ACCUEIL (STYLE COMME IMAGE) ===== */
+
+.accueil-cartes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.carte {
+  background: #eaf3ff;        /* bleu clair */
+  border-radius: 14px;
+  padding: 25px 22px;
+  text-align: left;
+}
+
+.carte h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.carte p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 900px) {
+  .accueil-cartes {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== ACCUEIL : MISSION & VALEURS CÔTE À CÔTE ===== */
+
+.mission-valeurs {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colonnes */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.mission-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.mission-box h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #0b3c5d;
+  text-align: center;
+}
+
+.mission-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  text-align: justify;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 900px) {
+  .mission-valeurs {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== GRILLE ACCUEIL COMPACTE ET ALIGNÉE ===== */
+
+.accueil-main-grid {
+  display: grid;
+  grid-template-columns: 260px repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  align-items: start;
+}
+
+/* Photo */
+.bloc-photo img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Cartes info */
+.bloc-info {
+  background: #eaf3ff;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.bloc-info h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1e3a8a;
+}
+
+.bloc-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #1f2937;
+}
+
+/* Cartes larges (ligne du bas) */
+.bloc-info.large {
+  grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .accueil-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bloc-info.large {
+    grid-column: span 1;
+  }
+}
+/* ===== PAGE MISSION : CARTES AVEC PHOTOS ===== */
+
+.mission-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.mission-page h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #0b3c5d;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.mission-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.mission-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mission-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.mission-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Carte témoignage */
+.mission-card.highlight {
+  background: #eaf3ff;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  margin-top: 10px;
+  color: #2e7d32;
+}
+/* ===== PAGE SERVICES ===== */
+
+.services-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.services-page h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+.services-page .intro {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+/* Grille des services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Carte service */
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 22px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Effet léger au survol */
+.service-card:hover {
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+/* ===== PAGE RÉALISATIONS ===== */
+
+.realisations-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.realisations-page h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+.realisations-page .intro {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+/* Grille principale */
+.realisations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Carte réalisation */
+.realisation-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 22px;
+  text-align: center;
+}
+
+.realisation-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.realisation-card h3 {
+  font-size: 20px;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.realisation-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Section impact */
+.realisation-impact {
+  margin-top: 70px;
+  background: #eaf3ff;
+  border-radius: 18px;
+  padding: 40px;
+  text-align: center;
+}
+
+.realisation-impact h2 {
+  font-size: 28px;
+  color: #0b3c5d;
+  margin-bottom: 15px;
+}
+
+.realisation-impact p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+/* ===== ACTUALITÉS ===== */
+
+.actualites-page {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.actualites-page h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #0b3c5d;
+  margin-bottom: 10px;
+}
+
+.actualites-page .intro {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #444;
+}
+
+.fb-section h2,
+.videos-section h2 {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #1e3a8a;
+}
+
+.fb-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.video-box {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  padding: 10px;
+}
+.videos {
+  margin: 60px auto;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 30px;
+}
+.faq-section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 36px;
+  color: #6aaac7;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #6aaac7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background: #5a9ab6;
+}
+
+.faq-answer {
+  background: #ffffff;
+  color: #444;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-answer p {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 20px;
+}
+
+.arrow {
+  font-size: 24px;
+}
+.faq-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 32px;
+  color: #6ba7c7;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #6ba7c7;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  display: none;
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+.faq-container {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #6faec9;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #6faec9;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  background: #ffffff;
+  color: #333;
+  padding: 20px;
+  display: none;
+  border: 1px solid #6faec9;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.arrow {
+  font-size: 20px;
+}
+/* FAQ */
+.faq-section {
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 32px;
+  color: #6faec7;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #6faec7;
+  color: #fff;
+  font-size: 18px;
+  padding: 18px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  background: #5a9ab2;
+}
+
+.faq-answer {
+  background: #ffffff;
+  color: #333;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 18px;
+  max-height: 300px;
+}
+/* Formulaire de contact */
+.contact-form-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #f7f9fb;
+  border-radius: 10px;
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  color: #2c6fa3;
+  margin-bottom: 10px;
+}
+
+.contact-form-section p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #2c6fa3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background: #1f537d;
+}
+
+#form-status {
+  margin-top: 15px;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+ .membres-conseil {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* STYLE COMMUN - CARRE */
+.membre img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px; /* carré doux */
+  border: 3px solid #000;
+  display: block;
+  margin: 0 auto;
+}
+
+.membre p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* SECRETAIRES CENTRÉS */
+.secretaires-centre {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.conseillers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.conseiller-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.conseiller-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.conseiller-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .conseillers-grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .secretaires-centre {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+
+
+/* Logo fond */
+.logo-fond {
+  margin-top: 60px;
+}
+
+.logo-fond img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+/* ===== CORRECTION NOM SOUS IMAGE ===== */
+.membre {
+  display: flex;
+  flex-direction: column;   /* image en haut, nom en bas */
+  align-items: center;
+}
+
+/* Force le texte normal (pas vertical, pas tourné) */
+.membre p {
+  writing-mode: horizontal-tb !important;
+  transform: none !important;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ===== PAGE ACTUALITÉS ===== */
+.actualites-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.actualites-page h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #222;
+}
+
+/* Facebook container */
+.fb-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  background: #f5f5f5;
+  color: #555;
+}

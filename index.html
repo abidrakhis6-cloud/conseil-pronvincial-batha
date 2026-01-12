@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil – Conseil Provincial du Batha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Conseil Provincial du Batha</h1>
+  <p>Ati – Province du Batha – République du Tchad</p>
+</header>
+
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="presentation.html">Présentation</a>
+  <a href="missions.html">Mission</a>
+  <a href="services.html">Services</a>
+  <a href="realisation.html">Réalisations</a>
+  <a href="actualites.html">Actualités</a>
+  <a href="contact.html">Contact</a>
+  <a href="#" onclick="showMembres()">Membres</a>
+  <a href="localisation.html">Localisation</a>
+</nav>
+
+<main id="content">
+  <h1>Bienvenue sur le site officiel du Conseil Provincial du Batha</h1>
+
+<p>
+Le Conseil Provincial du Batha est une institution territoriale représentant l’autorité locale de la province du Batha, dont le siège est situé à Ati. 
+Il joue un rôle essentiel dans l’organisation, la coordination et le suivi des actions de développement au niveau provincial.
+</p>
+
+<p>
+À travers ses missions, le Conseil œuvre pour l’amélioration des conditions de vie des populations, le renforcement de la gouvernance locale, 
+la promotion de la paix et de la cohésion sociale, ainsi que la valorisation des ressources humaines et naturelles de la province.
+</p>
+
+<p>
+Ce site officiel a pour objectif d’informer les citoyens, les partenaires et les visiteurs sur les missions, les services, les réalisations 
+et les actualités du Conseil Provincial du Batha.
+</p>
+
+ <section class="accueil-main-grid">
+
+  <!-- PHOTO -->
+  <div class="bloc-photo">
+    <img src="assets/images/Rakhis.JPG" alt="Président du Conseil Provincial">
+  </div>
+
+  <!-- 17M+ -->
+  <div class="bloc-info">
+    <h3>17M+</h3>
+    <p>Têtes de cheptel (bovins, ovins, caprins, camelins)</p>
+  </div>
+
+  <!-- AGRO -->
+  <div class="bloc-info">
+    <h3>Agro-pastorale</h3>
+    <p>Une vocation agro-pastorale dominante</p>
+  </div>
+
+  <!-- POPULATION -->
+  <div class="bloc-info">
+    <h3>Population</h3>
+    <p>Fortement engagée dans l’élevage et l’agriculture</p>
+  </div>
+
+  <!-- MISSION -->
+  <div class="bloc-info large">
+    <h3>Notre Mission et Nos Valeurs</h3>
+    <p>
+      Améliorer la qualité de vie des citoyens à travers des initiatives concrètes,
+      la participation citoyenne et un engagement durable pour la province du Batha.
+    </p>
+  </div>
+
+  <!-- UNIQUE -->
+  <div class="bloc-info large">
+    <h3>Ce Qui Nous Rend Unique</h3>
+    <p>
+      L’engagement et le leadership des membres du Conseil provincial du Batha,
+      notamment autour du président <strong>RAKHIS AHMAT SALEH</strong>,
+      garantissent une vision claire et une action efficace.
+    </p>
+  </div>
+
+</section>
+
+</section>
+
+</div>
+</main>
+<footer>
+  <p>©️ 2026 – Conseil Provincial du Batha</p>
+</footer>
+
+<script src="chatbot.js"></script>
+
+<script>
+function showMembres() {
+  document.getElementById("content").innerHTML = `
+    <h1>Membres du Conseil Provincial du Batha</h1>
+
+    <div class="membres-container">
+
+      <div class="membre">
+        <img src="assets/images/presi.jpe" alt="Président">
+        <h3>Président du Conseil Provincial</h3>
+        <p>RAKHIS AHMAT SALEH</p>
+      </div>
+    
+  <div class="secretaires-top">
+    <div class="membre">
+      <img src="assets/images/secretaire.jpg" alt="">
+      <h3>Secretaire de Seance</h3>
+      <p>Mahamat Zene Al-Issel Attari</p>
+    
+    </div>
+
+    <div class="membre">
+      <img src="assets/images/secretaire1.jpg" alt="">
+      <p>Fatime Sakine Hamadi</p>
+    </div>
+  </div>
+
+      <h2>Conseillers Provinciaux</h2>
+
+      <div class="conseillers">
+
+        <div class="membre"><img src="assets/images/c1.jpg"><p>Adama Mahamat Magadji</p></div>
+    <div class="membre"><img src="images/c2.jpg"><p>Mahamat Ali Hidjazi</p></div>
+    <div class="membre"><img src="images/c3.jpg"><p>Oumar Dehye Dogo</p></div>
+    <div class="membre"><img src="images/c4.jpg"><p>Abdel-kader Chaltout Issakha</p></div>
+    <div class="membre"><img src="images/c5.jpg"><p>Mariam Abakar Adoum</p></div>
+    <div class="membre"><img src="images/c6.jpg"><p>Abdoulaye Djazim</p></div>
+    <div class="membre"><img src="images/c7.jpg"><p>Mahamat Ibrahim Djibrine</p></div>
+    <div class="membre"><img src="images/c8.jpg"><p>Al-mahi Abdelhakh Mahamat</p></div>
+    <div class="membre"><img src="images/c9.jpg"><p>Oumar Hassan Djibrine</p></div>
+    <div class="membre"><img src="images/c10.jpg"><p>Issa Brahim Mahamat</p></div>
+    <div class="membre"><img src="images/c11.jpg"><p>Fatime Hassan Abdelkerim</p></div>
+    <div class="membre"><img src="images/c12.jpg"><p>Allamine Soumaine Allamine</p></div>
+    <div class="membre"><img src="images/c13.jpg"><p>Oumar Tahir Moussa</p></div>
+    <div class="membre"><img src="images/c14.jpg"><p>Aziza Annadif Issa</p></div>
+    <div class="membre"><img src="images/c15.jpg"><p>Hassan Ali Hissil</p></div>
+
+      </div>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>
