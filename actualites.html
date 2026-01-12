@@ -11,25 +11,30 @@
 
   <main class="actualites-page">
 
-    <h1>Actualités</h1>
-<!-- Facebook SDK -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-  src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0">
-</script>
+    <section class="actualites-page">
+  <h1>Actualités</h1>
 
-<!-- Facebook Timeline -->
-<div class="fb-container">
-  <div class="fb-page"
-    data-href="https://www.facebook.com/share/18FDUNp6P7/?mibextid=wwXIfr"
-    data-tabs="timeline"
-    data-width=""
-    data-height="800"
-    data-small-header="false"
-    data-hide-cover="false"
-    data-show-facepile="true">
+  <div class="fb-iframe-container">
+    <iframe
+      src="https://www.facebook.com/plugins/page.php
+        ?href=https://www.facebook.com/share/18FDUNp6P7/
+        &tabs=timeline
+        &width=500
+        &height=900
+        &small_header=false
+        &adapt_container_width=true
+        &hide_cover=false
+        &show_facepile=true"
+      width="500"
+      height="900"
+      style="border:none;overflow:hidden"
+      scrolling="no"
+      frameborder="0"
+      allowfullscreen="true"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+    </iframe>
   </div>
-</div>
+</section>
 
   </main>
 

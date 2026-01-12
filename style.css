@@ -1093,3 +1093,17 @@ footer {
   width: 100% !important;
   max-width: 500px;
 }
+
+.fb-iframe-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.fb-iframe-container iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 900px;
+  border-radius: 8px;
+}
