@@ -2,43 +2,94 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Actualités – Conseil Provincial du Batha</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://www.facebook.com/share/1ZfpSSS6rp/?mibextid=wwXIfr">
+</script>
 <body>
 
-  <header class="page-header">
-    <h1>Actualités</h1>
-  </header>
+<header><h1>Conseil Provincial du Batha</h1></header>
 
-  <main class="actualites-container">
+<nav>
+  <a href="index.html">Accueil</a>
+  <a href="presentation.html">Présentation</a>
+  <a href="missions.html">Mission</a>
+  <a href="services.html">Services</a>
+  <a href="realisation.html">Réalisations</a>
+  <a href="actualites.html">Actualités</a>
+  <a href="contact.html">Contact</a>
+  <a href="membres.html">Membres</a>
+  <a href="localisation.html">Localisation</a>
+</nav>
 
-    <!-- Facebook Page Plugin -->
-    <div class="facebook-wrapper">
-      <div class="fb-page"
-        data-href="https://www.facebook.com/share/18FDUNp6P7/"
-        data-tabs="timeline"
-        data-width=""
-        data-height="650"
-        data-small-header="false"
-        data-adapt-container-width="true"
-        data-hide-cover="false"
-        data-show-facepile="true">
+<main class="actualites-page">
+
+  <h1>Actualités</h1>
+  <p class="intro">
+    Retrouvez ici les dernières publications, vidéos et communications officielles
+    du Conseil Provincial du Batha.
+  </p>
+
+  <!-- SECTION FACEBOOK POSTS -->
+  <section class="fb-section">
+    <h2>Publications Facebook</h2>
+
+    <div class="fb-posts">
+
+      <!-- POST FACEBOOK 1 -->
+      <div class="fb-post"
+        data-href="https://www.facebook.com/share/p/177VvwRfxB/?mibextid=wwXIfr"
+        data-width="500">
       </div>
+
+      <!-- POST FACEBOOK 2 -->
+      <div class="fb-post"
+        data-href="https://www.facebook.com/share/p/1BzgMktz9b/?mibextid=wwXIfr"
+        data-width="500">
+      </div>
+
     </div>
+  </section>
 
-  </main>
+  <section class="videos">
+  <h2>Vidéos – 13/09/2025</h2>
 
-  <footer class="footer">
-    ©️ 2026 – Conseil Provincial du Batha
-  </footer>
+  <div class="videos-grid">
 
-  <!-- Facebook SDK -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v19.0">
-  </script>
+    <!-- Vidéo Facebook 1 -->
+    <iframe
+      src="https://www.facebook.com/plugins/video.php?height=315&href=https%3A%2F%2Fwww.facebook.com%2F61580460581998%2Fvideos%2F1201131265145784%2F&show_text=false&width=560&t=0"
+      width="100%"
+      height="315"
+      style="border:none;overflow:hidden"
+      scrolling="no"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      allowfullscreen="true">
+    </iframe>
 
+    <!-- Vidéo Facebook 2 -->
+    <iframe
+      src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61580460581998%2Fvideos%2F1088863919938573%2F&show_text=false&width=560&t=0"
+      width="100%"
+      height="315"
+      style="border:none;overflow:hidden"
+      scrolling="no"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      allowfullscreen="true">
+    </iframe>
+
+  </div>
+</section>
+
+</main>
+
+<footer><p>©️ 2026 – Conseil Provincial du Batha</p></footer>
 </body>
 </html>
